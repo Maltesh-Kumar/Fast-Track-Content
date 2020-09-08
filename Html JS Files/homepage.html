@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Import Google Icons -->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    .button5:hover {
+      background-color: #01579b;
+      color: white;
+    }
+
+    #inpop {
+      height: 275px;
+    }
+
+    #cmi {
+      height: 200px;
+    }
+
+    .w3-xxxlarge {
+      color: #01579b;
+      margin-left: auto;
+    }
+
+    .w3-button {
+      background-color: #01579b;
+      color: white;
+    }
+
+    .info {
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .margin {
+      margin-top: 3.5rem;
+      margin-bottom: 3rem;
+    }
+
+    #inner {
+
+      text-align: center;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif
+    }
+
+    body {
+      font-size: 16px;
+    }
+
+    .w3-half img {
+      margin-bottom: -6px;
+      margin-top: 16px;
+      opacity: 0.8;
+      cursor: pointer
+    }
+
+    .w3-half img:hover {
+      opacity: 1
+    }
+  </style>
+
+
+  <title>Home</title>
+</head>
+
+<body class="#eeeeee grey lighten-3">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar #01579b light-blue darken-4 w3-collapse w3-top w3-large w3-padding"
+    style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>Home<br>Page</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <dl>
+        <dt><a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> </dt>
+        <dt class="nav-item dropdown"><a href="#" onclick="w3_close()" data-toggle="dropdown"
+            class="w3-bar-item w3-button w3-hover-white nav-link dropdown-toggle">Input Options</a>
+          <div class="dropdown-menu">
+            <a href="#rawtext" onclick="w3_close()" class="dropdown-item w3-bar-item w3-button w3-hover-white">Raw
+              Text</a>
+            <a href="#imagedata" onclick="w3_close()" class=" dropdown-item w3-bar-item w3-button w3-hover-white">Image
+              Data</a>
+            <a href="#newsapi" onclick="w3_close()"
+              class="dropdown-item dropdown-item w3-bar-item w3-button w3-hover-white">News API</a>
+            <a href="#document" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Document</a>
+          </div>
+        </dt>
+      </dl>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large #01579b light-blue darken-4 w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button #01579b light-blue darken-4 w3-margin-right" onclick="w3_open()">☰</a>
+    <span style="color:white">Input Options</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+      <h1 class="w3-jumbo"><b>Content Modelling Intelligence</b></h1>
+      <h1 class="w3-xxxlarge"><b>What Does CMI Do?</b></h1>
+      <hr style="width:50px;border:5px solid #0277bd " class="w3-round">
+    </div>
+
+    <!-- About -->
+    <div class="w3-row-padding">
+      <div class="w3-container">
+        <p>Nowadays within the period of having huge information, literary information is rapidly developing and is
+          accessible in
+          numerous diverse languages. Often due to time limitations we are not able to devour all the information that
+          is
+          accessible. With the fast-moving world, it’s troublesome to peruse all the text-content. Hence, the necessity
+          for
+          content summarization comes to the spotlight. It is in this manner we are able to summarize the content so
+          that it
+          gets easier to ingest the data, keeping up the substance and understanding of the data</p>
+        <p>Content Modelling/Automatic Text Summarization is one of the foremost challenging and serious issues within
+          the field of
+          Natural language processing (NLP). It could be prepared by producing a brief and important outline of content
+          from
+          different content assets such as raw text, news api, images and document summarization.</p>
+        <div>
+          <img src="/home/maltesh/Maltesh/Projects/Content-model/Content-Modelling-System/CMS/Image Assets/CMI.jpg" id="cmi" class="img-responsive mx-auto d-block rounded"> <br>
+        </div>
+        <p>Our software model consists of content summarization methods for various Indian and foreign languages like
+          Hindi, Kannada,
+          Telugu, Marathi, French, German etc. It also encompasses a system of Optical Character Recognition (OCR) which
+          extracts the content from the
+          given picture. The main motive of an OCR is to create editable records from existing paper records or picture
+          files.
+          An OCR also works on sentence discovery to protect a document’s structure. It also contains a text-to-speech
+          component
+          that will provide an mp3 audio of the summary in the chosen language.</p>
+      </div>
+
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <!-- <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div> -->
+
+    <!-- Raw Text -->
+    <div class="w3-row-padding">
+      <div class="w3-container" id="rawtext" style="margin-top:75px">
+        <h1 class="w3-jumbo"><b>Input Options</b></h1>
+        <h1 class="w3-xxxlarge"><b>Raw Text.</b></h1>
+        <hr style="width:50px;border:5px solid #0277bd" class="w3-round">
+        <div class="w3-half">
+          <p>Raw text input that is given by the user is summarized.</p>
+          <p>User needs to chose the desired language for summary. The data to be summarized can be pasted into the text
+            box to
+            obtain modelled content on submission. An audio[mp3] file of the summary in the selected language is also
+            accessible for
+            download.
+          </p><br>
+          <p>CLick the button below to proceed!</p>
+          <a href="index.html"><button type="button" class="btn button5"> Raw Text
+              <span class="glyphicon glyphicon-send"></span>
+            </button></a>
+        </div>
+        <div class="w3-half">
+          <img src="/home/maltesh/Maltesh/Projects/Content-model/Content-Modelling-System/CMS/Image Assets/rawtext.jpeg" id="inpop" class="img-responsive mx-auto d-block rounded"> <br>
+        </div>
+      </div>
+      <!-- Image Data -->
+      <div class="w3-container" id="imagedata" style="margin-top:75px">
+        <h1 class="w3-xxxlarge"><b>Image Data.</b></h1>
+        <hr style="width:50px;border:5px solid #0277bd" class="w3-round">
+        <div class="w3-half">
+          <p>JPEG Image input that is given by the user is summarized.</p>
+          <p>User must choose and upload the image of their choice and select the desired language for summary. The
+            data in the image
+            is then read using Optical Character Recognition(OCR) and then modelled and displayed as output. An
+            audio[mp3] file of
+            the summary in the selected language is also accessible for download.
+          </p><br>
+          <p>CLick the button below to proceed!</p>
+          <a href="indexImage.html"><button type="button" class="btn button5"> Image Data
+              <span class="glyphicon glyphicon-send"></span>
+            </button></a>
+        </div>
+        <div class="w3-half">
+          <img src="/home/maltesh/Maltesh/Projects/Content-model/Content-Modelling-System/CMS/Image Assets/imagedata.png" id="inpop" class="img-responsive mx-auto d-block rounded"> <br>
+        </div>
+      </div>
+
+
+      <!-- News API -->
+      <div class="w3-container" id="newsapi" style="margin-top:75px">
+        <h1 class="w3-xxxlarge"><b>News API.</b></h1>
+        <hr style="width:50px;border:5px solid #0277bd" class="w3-round">
+        <div class="w3-half">
+          <p>Sample news APIs covering multiple domains can be summarized.</p>
+          <p>User must select the desired language for summary. The user can opt for a news article from the given
+            list and press the submit
+            arrow on the desired article to obtain the modelled content. An audio[mp3] file of the summary in the
+            selected language is also accessible for
+            download.
+          </p><br>
+          <p>CLick the button below to proceed!</p>
+          <a href="indexNews.html"><button type="button" class="btn button5"> News API
+              <span class="glyphicon glyphicon-send"></span>
+            </button></a>
+        </div>
+        <div class="w3-half">
+          <img src="/home/maltesh/Maltesh/Projects/Content-model/Content-Modelling-System/CMS/Image Assets/newsapi.png" id="inpop" class="img-responsive mx-auto d-block rounded"> <br>
+        </div>
+
+      </div>
+
+
+      <!-- Document -->
+      <div class="w3-container" id="document" style="margin-top:75px">
+        <h1 class="w3-xxxlarge"><b>Document.</b></h1>
+        <hr style="width:50px;border:5px solid #0277bd" class="w3-round">
+        <div class="w3-half">
+          <p>A document uploaded by the user can be summarized.</p>
+          <p>User must choose and upload the docuemnt of their choice and select the desired language for summary.
+            The data in the
+            document is then modelled and displayed as output. An audio[mp3] file of the summary in the selected
+            language is also
+            accessible for download.
+          </p><br>
+          <p>CLick the button below to proceed!</p>
+          <a href="appDoc.html"><button type="button" class="btn button5"> Document
+              <span class="glyphicon glyphicon-send"></span>
+            </button></a>
+        </div>
+        <div class="w3-half">
+          <img src="/home/maltesh/Maltesh/Projects/Content-model/Content-Modelling-System/CMS/Image Assets/document.jpg" id="inpop" class="img-responsive mx-auto d-block rounded"> <br>
+        </div>
+      </div>
+      <!-- Contact -->
+      
+        <!-- <form action="/action_page.php" target="_blank">
+          <div class="w3-section">
+            <label>
+              <h6>Name</h6>
+            </label>
+            <input class="w3-input w3-border" type="text" id="name" name="Name" required>
+          </div>
+          <div class="w3-section">
+            <label>
+              <h6>Email</h6>
+            </label>
+            <input class="w3-input w3-border" type="text" id="email" name="Email" required>
+          </div>
+          <div class="w3-section">
+            <label>
+              <h6>Message</h6>
+            </label>
+            <input class="w3-input w3-border" type="text" id="message" name="Message" required>
+          </div>
+          <button type="submit" class="w3-button w3-block w3-padding-large w3-margin-bottom" onclick="store()">Send Message</button>
+        </form>-->
+      </div>
+    </div> 
+
+
+
+    <!-- End page content -->
+  </div>
+
+  <!-- W3.CSS Container -->
+  <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+    <p class="w3-right"> </p>
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+  function store(){
+     var inputEmail= document.getElementById("email");
+     var inputName= document.getElementById("name");
+     var inputMessage= document.getElementById("message");
+     localStorage.setItem("email", inputEmail.value);
+     localStorage.setItem("name", inputName.value);
+     localStorage.setItem("message", inputMessage.value);
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+
+</body>
+
+</html>

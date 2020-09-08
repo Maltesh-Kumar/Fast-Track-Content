@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Import Google Icons -->
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <style>
+      body,h1,h2,h3,h4,h5 {
+        font-family: "Poppins", sans-serif
+      }
+      .button5:hover {
+        background-color:#01579b ;
+        color: white;
+      }
+      
+      .button1 {
+        background-color:black;
+        color: white;
+        border: 2px solid #555555;
+      }
+      .button {
+        border:none;
+        border-radius: 12px;
+        padding: 12px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 3px 1px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      } 
+      .info {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .margin {
+        margin-top: 3.5rem;
+        margin-bottom: 3rem;
+      }
+    </style>
+
+    <title>Raw Text Page</title>
+  </head>
+  <body class="#eeeeee grey lighten-3">
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-wrapper #01579b light-blue darken-4">
+        <a href="#" class="brand-logo center">Content Modelling Intelligence</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="homepage.html">Home</a></li>
+        </ul>
+      </div>
+    </nav><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Raw Text Content</h3>
+          <div class="input-field margin">
+            <select id="language">
+              <option value="" disabled selected>Select Language</option>
+              <option value="marathi">marathi</option>
+              <option value="bengali">bengali</option>
+              <option value="hindi">hindi</option>
+              <option value="telugu">telugu</option>
+              <option value="kannada">kannada</option>
+              <option value="german">german</option>
+              <option value="french">french</option>
+              <option value="japnese">japnese</option>
+              <option value="punjabi">punjabi</option>
+            </select>
+            <label>Choose Language</label>
+          </div>
+
+          <div class="input-field">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Enter Raw Text</label>
+          </div>
+
+        </a href="#content"><button type="button" class="button button1 #0277bd light-blue darken-3" onclick="empty()" id="submit">Submit</button></a>
+        </div>
+      </div>
+      <br><br>
+        <!-- The column for Info Div -->
+        <div class="col s12 m5 offset-m2">
+          <h3 id="content">Modelled Content</h3>
+          <h6>Summary [English]:</h6>
+          <div class="z-depth-1 info" id="para-1"></div>
+          <h6>Summary [Chosen Language]:</h6>
+          <div class="z-depth-1 info" id="para-2"></div>
+          <h6>Summary Length:</h6>
+          <div class="z-depth-1 info" id="para-3"></div>
+          <h6>Original Text Length:</h6>
+          <div class="z-depth-1 info" id="para-4"></div>
+          <div><a href="play.html"><button type="button" class="button button5"> Audio File </button></a></div>
+          <br><br>
+          <br><br>
+        </div>
+      </div>
+    </div>
+
+    <!-- JQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript for Matrialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("select").formSelect();
+      });
+      function empty() {
+      var x;
+      x = document.getElementById("language").value;
+      if (x == "") {
+        alert("Choose a Language");
+        return false;
+      };
+    }
+    </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Import Google Icons -->
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <style>
+      body,h1,h2,h3,h4,h5 {
+        font-family: "Poppins", sans-serif
+      }
+      .button1 {
+        background-color:black;
+        color: white;
+        border: 2px solid #555555;
+      }
+      .button {
+        border:none;
+        border-radius: 12px;
+        padding: 12px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 3px 1px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      } 
+      .info {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .margin {
+        margin-top: 3.5rem;
+        margin-bottom: 3rem;
+      }
+      #inner {
+        
+        text-align:center;
+      }
+    </style>
+
+    <title>Audio Page</title>
+  </head>
+  <body class="#eeeeee grey lighten-3">
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-wrapper #01579b light-blue darken-4">
+        <a href="#" class="brand-logo center">Content Modelling Intelligence</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="homepage.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid" id="inner">
+      
+   
+    <h5>Listen to the Converted Audio:</h5><br>
+    <audio
+        controls
+        src="/home/maltesh/Maltesh/Projects/Content-model/Content-Modelling-System/CMS/Transit Storage/audio/audio.mp3">
+    </audio>
+    <a href="/home/maltesh/Maltesh/Projects/Content-model/Content-Modelling-System/CMS/Transit Storage/audio/audio.mp3" download><br>
+      <button type="button" class="button button1 #0277bd light-blue darken-3"><i class="fa fa-download"></i> Download</button></a>
+      
+   
+    </div>
+<!-- <script>
+  function download(filename) {
+    var name=audio;
+    var element = document.createElement('a');
+    element.setAttribute('href', filename);
+    element.setAttribute('download', name );
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
+}
+
+// Start file download.
+document.getElementById("dwn-btn").addEventListener("click", function(){
+    var filename = "/Users/shilparadhakrishnan/Downloads/damn/audio/audio.mp3";
+    download(filename);
+}, false);
+</script> -->
+  </body>
+</html>

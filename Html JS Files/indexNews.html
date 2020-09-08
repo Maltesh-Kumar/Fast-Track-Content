@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+  <!-- Import Google Icons -->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif
+    }
+
+    .button5:hover {
+      background-color: #01579b;
+      color: white;
+    }
+
+    .button1 {
+      background-color: black;
+      color: white;
+      border: 2px solid #555555;
+    }
+
+    .button {
+      border: none;
+      border-radius: 12px;
+      padding: 12px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 3px 1px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .info {
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .margin {
+      margin-top: 3.5rem;
+      margin-bottom: 3rem;
+    }
+  </style>
+
+  <title>News Page</title>
+</head>
+
+<body class="#eeeeee grey lighten-3">
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-wrapper #01579b light-blue darken-4">
+      <a href="#" class="brand-logo center">Content Modelling Intelligence</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="homepage.html">Home</a></li>
+      </ul>
+    </div>
+  </nav><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m5">
+        <h1>News Content</h1>
+        <p class="z-depth-1 margin info">Choose the language of your choice and click on the Submit Arrow of an article
+          of your choice to perform CMI action</p>
+        <div class="input-field margin">
+          <select id="language" required>
+            <option value="" disabled selected>Select Language</option>
+            <option value="marathi">Marathi</option>
+            <option value="bengali">Bengali</option>
+            <option value="hindi">Hindi</option>
+            <option value="telugu">Telugu</option>
+            <option value="kannada">Kannada</option>
+            <option value="german">German</option>
+            <option value="french">French</option>
+            <option value="japanese">Japanese</option>
+            <option value="punjabi">Punjabi</option>
+          </select>
+          <label>Choose Language</label>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 col-xl-3 news z-depth-1">
+            <h6 class="blue-text" id="category">Technology</h6>
+            <p>
+              Telecom Majors Seek Open Court Hearing of Their Pleas in Supreme
+              Court for Review of Certain Directions on AGR
+            </p>
+            <p>
+              <a href="#content" class="submit">. <i class="material-icons right">arrow_forward</i></a>
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 news z-depth-1">
+            <h6 class="blue-text">Technology</h6>
+            <p>
+              US to Probe Fatal Indiana Crash Involving Tesla Model 3
+            </p>
+            <p>
+              <a href="#content" class="submit">. <i class="material-icons right">arrow_forward</i></a>
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 news z-depth-1">
+            <h6 class="blue-text">Technology</h6>
+            <p>
+              Samsung Galaxy Note 10 Lite Price in India Tipped to Start at Rs.
+              35,990
+            </p>
+            <p>
+              <a href="#content" class="submit">. <i class="material-icons right">arrow_forward</i></a>
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 news z-depth-1">
+            <h6 class="blue-text">Technology</h6>
+            <p>
+              Jio Wi-Fi Calling Service Launched, Supports Over 150 Mobile
+              Devices: Check How to Enable, Benefits
+            </p>
+            <p>
+              <a href="#content" class="submit">. <i class="material-icons right">arrow_forward</i></a>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 news z-depth-1">
+            <h6 class="blue-text">Technology</h6>
+            <p>
+              Airtel Wi-Fi Calling Service Expands to New Cities, Now Works With
+              Any Broadband
+            </p>
+            <p>
+              <a href="#content" class="submit">. <i class="material-icons right">arrow_forward</i></a>
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 news z-depth-1">
+            <h6 class="blue-text">Technology</h6>
+            <p>
+              SpaceX Launches 60 More Starlink Internet-Beaming Mini Satellites,
+              Its Third Batch
+            </p>
+            <p>
+              <a href="#content" class="submit">. <i class="material-icons right">arrow_forward</i></a>
+            </p>
+
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 news z-depth-1">
+            <h6 class="blue-text">Politics</h6>
+            <p>
+              SC to pass order on Mar 5 on whether to refer matter to
+              court-appointed mediator
+            </p>
+            <p>
+              <a href="#content" class="submit">. <i class="material-icons right">arrow_forward</i></a>
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 news z-depth-1">
+            <h6 class="blue-text">Politics</h6>
+            <p>
+              PM Modi slams Congress on loan waiver, calls it lollipop
+            </p>
+            <p>
+              <a href="#content" class="submit">. <i class="material-icons right">arrow_forward</i></a>
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 news z-depth-1">
+            <h6 class="blue-text">Politics</h6>
+            <p>
+              Rath yatra is not meant to kill people, Mamata takes a jibe at BJP
+            </p>
+            <p>
+              <a href="#content" class="submit">. <i class="material-icons right">arrow_forward</i></a>
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 news z-depth-1">
+            <h6 class="blue-text">Business</h6>
+            <p>
+              Rupee surges 48 paise against USD amid easing US-Iran tensions
+            </p>
+            <p>
+              <a href="#content" class="submit">. <i class="material-icons right">arrow_forward</i></a>
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 news z-depth-1">
+            <h6 class="blue-text">Business</h6>
+            <p>
+              Slowdown blues: State of Indian economy and its fragile-five past
+            </p>
+            <p>
+              <a href="#content" class="submit">. <i class="material-icons right">arrow_forward</i></a>
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 news z-depth-1">
+            <h6 class="blue-text">Business</h6>
+            <p>
+              GST collection crosses Rs 1 lakh crore for second month in a row,
+              signals consumption boost" "category":"business
+            </p>
+            <p>
+              <a href="#content" class="submit">. <i class="material-icons right">arrow_forward</i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The column for Info Div -->
+    <div class="col s12 m5 offset-m2">
+      <h2 class="center" id="content">Modelled Content</h2>
+      <h6>Summary [English]:</h6>
+      <div class="z-depth-1 info" id="para-1"></div>
+      <!-- <h6>Chosen Language:</h6>
+          <div class="z-depth-1 info" id="para-5"></div> -->
+      <h6>Summary [Chosen Language]:</h6>
+      <div class="z-depth-1 info" id="para-2"></div>
+      <h6>Summary Length:</h6>
+      <div class="z-depth-1 info" id="para-3"></div>
+      <h6>Original Text Length:</h6>
+      <div class="z-depth-1 info" id="para-4"></div>
+      <div><a href="play.html"><button type="button" class="button button5"> Audio File </button></a></div>
+      <br><br>
+      <br><br>
+    </div>
+  </div>
+  </div>
+
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <!-- JavaScript for Matrialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("select").formSelect();
+    });
+    function empty() {
+      var x;
+      x = document.getElementById("language").value;
+      if (x == "") {
+        alert("Choose a Language");
+        return false;
+      };
+    }
+  </script>
+
+  <script src="appNews.js"></script>
+
+</html>
